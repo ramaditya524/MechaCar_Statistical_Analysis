@@ -9,5 +9,5 @@
 
 ## Summary Statistics on Suspension Coils
 
-* At an entire data level, the variance of the suspension coils is ~62 pounds per square inch and is well with the limit of 100 pounds per square inch
-* But, when we look at the data from a lot level lens, we find that the variance of the suspension coils of **Lot3** is ~170 pounds per square inch and is well in excess of the limit of 100 pounds per square inch
+* At an entire data level, the variance of the suspension coils is ~62 pounds per square inch and is well with the limit of 100 pounds per square inch :arrow_down:	
+* But, when we look at the data from a lot level lens, we find that the variance of the suspension coils of **Lot3** is ~170 pounds per square inch and is well in excess of the limit of 100 pounds per square inch :arrow_up:
