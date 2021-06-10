@@ -29,3 +29,40 @@
 * For the t-test comparing the population mean(1500) against the PSI for Lot3 data in the sample, the p-value(0.04) is less than 0.05, and therefore we reject the null hypothesis. The mean of PSI for the Lot3 data in the sample is NOT equal to the population mean.
 
 ## Study Design: MechaCar vs Competition
+
+The below is a short description of additional statistical studies that can quantify certain aspects of MechaCar's performance against the competition.
+
+### Metrics to test
+The study will test the following metrics comparing MechaCar v/s competition
+* Maintenance cost
+* Highway fuel efficiency
+
+### Null hypotheses and alternative hypotheses
+For Maintenance cost:
+* Null Hypothesis - The mean cost of Maintenance of MechCar v/s competiton in the same segment are the same
+* Alternate Hypothesis - The mean cost of Maintenance of MechCar v/s competiton in the same segment are not the same
+
+For Highway fuel efficiency:
+* Null Hypothesis - The mean Hwy fuel efficiency of MechCar v/s competiton in the same segment are the same
+* Alternate Hypothesis - The mean Hwy fuel efficiency of MechCar v/s competiton in the same segment are not the same
+
+### Statistical tests to use
+For the purpose of this study, we will use multiple Two-sample t-tests. We will use one Two-sample t-test for MechaCar v/s each competitor.
+
+We use the two-sample t-test because we will be comparing sample data of MechaCar v/s sample data of each competitor.
+We cannot use ANOVA because maintenance cost and Highway fuel efficiency are both continuous values and not categorical values.
+
+We can also convert the maintenance cost of MechaCar and all others into multiple buckets like >$30k,$20-$30k,$10-$20k,<$10k and use ANOVA
+
+### Data needed
+* Manufacturer
+* Model name
+* Year
+* Maintenance costs per year
+* Highway fuel efficiency
+* Segment(sedan,SUV,Minivan etc.)
+
+Optional
+* Cylinders
+* Transmission type
+* City fuel efficiency
