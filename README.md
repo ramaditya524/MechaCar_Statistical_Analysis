@@ -17,4 +17,15 @@
   * The variance of the suspension coils of **Lot2** is ~7 pounds per square inch and is well with the limit of 100 pounds per square inch :arrow_down:
   * But, when we look at the data of **Lot3** we find that the variance of the suspension coils is ~170 pounds per square inch and is well in excess of the limit of 100 pounds per square inch :arrow_up:
 
+## T-Tests on Suspension Coils
 
+![analysis images](t_test_total.png)
+* For the t-test comparing the population mean(1500) against the PSI for entire sample, the p-value(0.06) is greater than 0.05, and therefore we fail to reject the null hypothesis. The mean of PSI for the entire sample is equal to the population mean. 
+![analysis images](t_test_lot1.png)
+* For the t-test comparing the population mean(1500) against the PSI for Lot1 data in the sample, the p-value(1) is greater than 0.05, and therefore we fail to reject the null hypothesis. The mean of PSI for the Lot1 data in the sample is equal to the population mean.
+![analysis images](t_test_lot2.png)
+* For the t-test comparing the population mean(1500) against the PSI for Lot2 data in the sample, the p-value(0.6) is greater than 0.05, and therefore we fail to reject the null hypothesis. The mean of PSI for the Lot2 data in the sample is equal to the population mean.
+![analysis images](t_test_lot3.png)
+* For the t-test comparing the population mean(1500) against the PSI for Lot3 data in the sample, the p-value(0.04) is less than 0.05, and therefore we reject the null hypothesis. The mean of PSI for the Lot3 data in the sample is NOT equal to the population mean.
+
+## Study Design: MechaCar vs Competition
