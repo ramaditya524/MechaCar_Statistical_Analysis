@@ -8,6 +8,11 @@
 * For an inital multiple linear regression analysis without further intervention, this model predicts the MPG of MechaCar prototypes pretty effectively. We can say this because this model conveys that the ground clearance and vehicle length predict 71.5% of the variance in MPG. 
 
 ## Summary Statistics on Suspension Coils
-
+![analysis images](total_summary.png) ![analysis images](lot_summary.png)
 * At an entire data level, the variance of the suspension coils is ~62 pounds per square inch and is well with the limit of 100 pounds per square inch :arrow_down:	
-* But, when we look at the data from a lot level lens, we find that the variance of the suspension coils of **Lot3** is ~170 pounds per square inch and is well in excess of the limit of 100 pounds per square inch :arrow_up:
+* At a lot level lens:
+** The variance of the suspension coils of **Lot1** is ~1 pounds per square inch and is well with the limit of 100 pounds per square inch :arrow_down:
+** The variance of the suspension coils of **Lot2** is ~7 pounds per square inch and is well with the limit of 100 pounds per square inch :arrow_down:
+** But, when we look at the data of **Lot3** we find that the variance of the suspension coils is ~170 pounds per square inch and is well in excess of the limit of 100 pounds per square inch :arrow_up:
+
+
