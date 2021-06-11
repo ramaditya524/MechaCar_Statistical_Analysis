@@ -11,12 +11,9 @@ total_summary <- SuspCoil %>% summarize(Mean=mean(SuspCoil$PSI),Median=median(Su
 lot_summary <- SuspCoil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI),.groups = 'keep')
 
 #Deliverable3
+
 pop_mean <- 1500
 t.test(SuspCoil$PSI,mu=pop_mean)
-lot1 <- subset(SuspCoil,Manufacturing_Lot == "Lot1")
-lot2 <- subset(SuspCoil,Manufacturing_Lot == "Lot2")
-lot3 <- subset(SuspCoil,Manufacturing_Lot == "Lot3")
-t.test(lot1$PSI,mu=pop_mean)
-t.test(lot2$PSI,mu=pop_mean)
-t.test(lot3$PSI,mu=pop_mean)
-
+t.test(subset(SuspCoil$PSI,SuspCoil$Manufacturing_Lot=="Lot1"),mu=pop_mean)
+t.test(subset(SuspCoil$PSI,SuspCoil$Manufacturing_Lot=="Lot2"),mu=pop_mean)
+t.test(subset(SuspCoil$PSI,SuspCoil$Manufacturing_Lot=="Lot3"),mu=pop_mean)
